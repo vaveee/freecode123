@@ -1,0 +1,11 @@
+site_name: MkLorum
+hljs_style: github
+hljs_languages:
+    - css
+    - html
+nav:
+    - Home: index.md
+    - About: about.md
+    - HTML-&-CSS: HTML-&-CSS.md
+
+theme: readthedocs
