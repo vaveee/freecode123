@@ -1,26 +1,15 @@
 
-
-
-
-
-
-
-
-
-
-
-### 更改文字颜色
+### 更改文本的颜色
 CSS允许我们更改许多样式。要更改元素的颜色，请使用color。
 
-这里是你如何将你的h2元素的文本颜色设置为蓝色:`<h2 style="color: blue">小猫相册App</h2>`。
+将h2元素的文本颜色设置为蓝色:`<h2 style="color: blue">小猫相册App</h2>`。
 
 ```
 <h2  style ="color:red"> 小猫相册App </h2>
 
 <p>小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p>
 ```
-
-### 使用CSS选择器设置元素样式
+### 使用元素选择器来设置元素的样式
 不用给每个元素都添加单独的样式，可以使用一个样式同时设置多个元素。
 
 你可以创建如下样式元素:`<style></style>`。
@@ -38,16 +27,15 @@ h2 {
    color : blue;
 }
 </style>
-
-<h2> 小猫相册App </h2>
-
-<p>小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p>
 ```
+<h2> 小猫相册App </h2>
+<p>小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p>
 
-### 使用CSS class为元素设置样式
-class【class：类】是可重用的样式，可以添加到HTML元素中。你可以将类应用于HTML元素，例如:`<h2 class="blue-text">小猫相册App</h2>`。
+### 使用 class 选择器设置单个元素的样式
+class【class：类】是可重用的样式，可以添加到HTML元素中。
+你可以将class应用于HTML元素，例如:`<h2 class="blue-text">小猫相册App</h2>`。
 
-请注意，在CSS样式元素中，class应以句点开头。在HTML元素的类声明中，class不应以句点开头。
+请注意，在CSS样式元素中，class应以点开头。在HTML元素的类声明中，class不应以点开头。
 ```
 <style>
   .red-text {
@@ -59,8 +47,7 @@ class【class：类】是可重用的样式，可以添加到HTML元素中。你
 
 <p>小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p>
 ```
-
-### 使用CSS class设置多个元素的样式
+### 使用 class 选择器设置多个元素的样式
 你可以通过class="class-name" 【name：名称】在相关元素的开始标签内使用，将类附加到HTML元素。
 
 CSS选择器在开始时需要这样一个点:`.blue-text { color: blue; }`，但是类声明不使用这样的点，例如:`<h2 class="blue-text">小猫相册App<h2>`。
@@ -77,16 +64,13 @@ CSS选择器在开始时需要这样一个点:`.blue-text { color: blue; }`，�
 
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p>
 ```
-
-###  更改元素的字体大小
-字体大小由font-sizeCSS属性控制，例如:`h1 { font-size: 30px; }`。
+### 更改元素的字体大小
+字体大小由font-size  CSS属性控制，例如:`h1 { font-size: 30px; }`。
 ```
 <style>
   .red-text {
     color: red;
   }
-</style>
-
   p {
      font-size : 16 px ;
   }
@@ -97,8 +81,7 @@ CSS选择器在开始时需要这样一个点:`.blue-text { color: blue; }`，�
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p> 
 <p >小猫有一对透亮灵活的大眼睛，黑黑的瞳仁还会变：早晨，像枣核；中午，就成了细线；夜里，却变成两只绿灯泡，圆溜溜的，闪闪发光。</p>
 ```
-
-### 设置元素的字体系列
+### 设置元素的字体
 你可以使用font-family属性设置元素的字体。
 
 例如，如果要将h2元素的字体设置为Sans-serif，则可以使用以下CSS :`h2 { font-family: Sans-serif; }`。
@@ -119,8 +102,7 @@ CSS选择器在开始时需要这样一个点:`.blue-text { color: blue; }`，�
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p> 
 <p>小猫有一对透亮灵活的大眼睛，黑黑的瞳仁还会变：早晨，像枣核；中午，就成了细线；夜里，却变成两只绿灯泡，圆溜溜的，闪闪发光。</p>
 ```
-
-### 导入Google字体
+### 引入谷歌字体
 要从Google或任何其他网站导入字体，请遵循以下格式: `<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">`
 ```
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -144,11 +126,10 @@ CSS选择器在开始时需要这样一个点:`.blue-text { color: blue; }`，�
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p> 
 <p  class ="red-text"> 小猫有一对透亮灵活的大眼睛，黑黑的瞳仁还会变：早晨，像枣核；中午，就成了细线；夜里，却变成两只绿灯泡，圆溜溜的，闪闪发光。</p>
 ```
-
-### 指定字体应如何降级
+### 字体如何优雅降级
 在所有浏览器中都可以使用几种默认字体。这些措施包括Monospace，Serif和Sans-Serif。
 
-例如，如果你想要一个元素使用Helvetica字体，但又Sans-Serif在Helvetica不可用时降级为该字体，则可以使用以下CSS样式:`p { font-family: Helvetica, Sans-Serif; }`。
+例如，如果你想要一个元素使用Helvetica字体，在Helvetica不可用时降级为Sans-Serif字体，则可以使用以下CSS样式:`p { font-family: Helvetica, Sans-Serif; }`。
 
 ```
 <!--<link href ="http://fonts.googleapis.com/css?family=Lobster” rel ="stylesheet” type ="text / css”>--> 
@@ -172,11 +153,8 @@ CSS选择器在开始时需要这样一个点:`.blue-text { color: blue; }`，�
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p> 
 <p  class ="red-text"> 小猫有一对透亮灵活的大眼睛，黑黑的瞳仁还会变：早晨，像枣核；中午，就成了细线；夜里，却变成两只绿灯泡，圆溜溜的，闪闪发光。</p>
 ```
-
-
-
-### 调整图片大小
-CSS有一个称为的属性width，用于控制元素的宽度。就像字体一样，我们将使用px（像素）来指定图像的宽度。
+### 调整图片的大小
+CSS有一个width属性，用于控制元素的宽度。就像字体一样，我们将使用px（像素）来指定图像的宽度。
 
 例如，如果我们想创建一个称为large-image的CSS类，使HTML元素的宽度为500像素，则可以使用:`<style> .larger-image { width: 500px; } </style>`。
 
@@ -203,14 +181,13 @@ CSS有一个称为的属性width，用于控制元素的宽度。就像字体一
 
 <h2  class ="red-text"> 小猫相册App </h2>
 
-<img  class =“较小图像” src ="https://bit.ly/fcc-relaxing-cat">
+<img  class =“smaller-image” src ="https://bit.ly/fcc-relaxing-cat">
 
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p> 
 <p  class ="red-text"> 小猫有一对透亮灵活的大眼睛，黑黑的瞳仁还会变：早晨，像枣核；中午，就成了细线；夜里，却变成两只绿灯泡，圆溜溜的，闪闪发光。</p>
 ```
-
 ### 在元素周围添加边框
-CSS边框有这样的属性style，color和width。
+CSS边框有style，color和width这样的属性
 
 例如，如果我们想在HTML元素周围创建一个5像素的红色边框，则可以使用此类:`<style> .thin-red-border { border-color: red; border-width: 5px; border-style: solid; } </style>`。
 
@@ -248,11 +225,10 @@ CSS边框有这样的属性style，color和width。
 <p class="red-text">小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p> 
 <p  class ="red-text"> 小猫有一对透亮灵活的大眼睛，黑黑的瞳仁还会变：早晨，像枣核；中午，就成了细线；夜里，却变成两只绿灯泡，圆溜溜的，闪闪发光。</p>
 ```
+### 用 border-radius 添加圆角边框
+要制作圆角，使用border-radius属性，设置像素。
 
-### 添加带有边界半径的圆角
-要制作圆角，所有border-radius像素和像素。
-
-你可以指定带有像素的边框半径。这将影响圆角。
+你可以指定带有像素的边框半径。设置边框为圆角。
 ```
 .thick-green-border {
   border-color: green;
@@ -261,9 +237,8 @@ CSS边框有这样的属性style，color和width。
   border-radius: 10px;
 }
 ```
-
-###　使用边界半径制作圆形图像
-你还可以使用百分比border-radius使事情变得更圆滑。
+### 用 border-radius 制作圆形图片
+你还可以使用百分比border-radius制作圆形图片。
 ```
 .thick-green-border {
   border-color: green;
@@ -272,6 +247,77 @@ CSS边框有这样的属性style，color和width。
   border-radius: 50%;
 }
 ```
+
+### 给 div 元素添加背景色
+你可以使用background-color属性设置元素的背景色。
+
+例如，如果你希望元素的背景色为绿色，则可以`.green-background { background-color: green; }`在style元素内使用。
+
+### 设置元素的 id
+除了类之外，每个HTML元素还可以具有一个id属性。
+
+使用id属性有很多好处，一旦开始使用jQuery，你将了解有关它们的更多信息。
+
+id属性在页面内应该是唯一的。浏览器不会强制执行此操作，但这是广泛认可的最佳做法。因此，请不要给同一个id属性提供多个元素。
+
+这是如何为h2元素赋予cat-photo-app id的示例: `<h2 id="cat-photo-app">`
+### 使用 id 属性来设定元素的样式
+关于id属性的一件很酷的事情是，就像类一样，你可以使用CSS设置样式。
+
+这是一个示例，说明如何将元素与idcat-photo-element属性一起使用，并为其赋予绿色背景色。
+
+在你的样式元素中: `#cat-photo-element { background-color: green; }`
+
+请注意，在样式元素内部，你总是通过在类.名之前引用类来引用它们。你总是通过在ID#前面加上ID来引用ID 。
+### 调整元素的内边距
+HTML元素本质上是小矩形。三个重要的属性控制围绕每个HTML元素的空间:padding，margin，和border。元素的内边距padding控制元素与其边框之间的空间量。
+```
+.green-box {
+  background-color: green;
+  padding: 20px;
+}
+```
+### 调整元素的外边距
+元素外边距margin控制元素border与周围元素之间的空间量。
+```
+.green-box {
+  background-color: green;
+  padding: 20px;
+  margin: 20px;
+}
+```
+### 给元素添加负外边距
+### 给元素的每一侧添加不同的内边距
+### 给元素的每一侧添加不同的外边距
+### 使用顺时针标记指定元素的内边距
+### 使用顺时针标记指定元素的外边距
+### 使用属性选择器来设置元素的样式
+### 理解绝对单位与相对单位
+### 给 HTML 的 body 元素添加样式
+### 从 body 元素继承样式
+### 样式中的优先级
+### Class 选择器的优先级高于继承样式
+### ID 选择器优先级高于 Class 选择器
+### 内联样式的优先级高于 ID 选择器
+### Important 的优先级最高
+### 使用十六进制编码获得指定颜色
+### 使用十六进制编码混合颜色
+### 使用缩写的十六进制编码
+### 使用 RGB 值为元素上色
+### 使用 RGB 混合颜色
+### 使用 CSS 变量一次更改多个元素
+### 创建一个自定义的 CSS 变量
+### 使用一个自定义的 CSS 变量
+### 给 CSS 变量设置备用值
+### 浏览器降级提高兼容性
+### 继承 CSS 变量
+### 更改特定区域的变量
+### 使用媒体查询更改变量-不同的屏幕大小适用不同的样式
+
+
+
+
+
 
 ### 将替代文本添加到图像以实现辅助功能
 alt属性（也称为替代文本）是浏览器如果无法加载图像将显示的内容。alt属性对于盲人或视障用户了解图像所描绘的内容也很重要。搜索引擎还会查看alt属性。
@@ -282,47 +328,10 @@ alt属性（也称为替代文本）是浏览器如果无法加载图像将显�
 
 
 
-
-### 为Div元素赋予背景色
-你可以使用background-color属性设置元素的背景色。
-
-例如，如果你希望元素的背景色为绿色，则可以`.green-background { background-color: green; }`在style元素内使用。
-
-### 设置元素的ID
-除了类之外，每个HTML元素还可以具有一个id属性。
-
-使用id属性有很多好处，一旦开始使用jQuery，你将了解有关它们的更多信息。
-
-id属性应该是唯一的。浏览器不会强制执行此操作，但这是广泛认可的最佳做法。因此，请不要给同一个id属性提供多个元素。
-
-这是如何为h2元素赋予cat-photo-app id的示例: `<h2 id="cat-photo-app">`
-
-### 使用ID属性为元素设置样式
-关于id属性的一件很酷的事情是，就像类一样，你可以使用CSS设置样式。
-
-这是一个示例，说明如何将元素与idcat-photo-element属性一起使用，并为其赋予绿色背景色。
-
-在你的样式元素中: `#cat-photo-element { background-color: green; }`
-
-请注意，在样式元素内部，你总是通过在类.名之前引用类来引用它们。你总是通过在ID#前面加上ID来引用ID 。
-
 ### 调整元素的填充
-HTML元素本质上是小矩形。三个重要的属性控制围绕每个HTML元素的空间:padding，margin，和border。元素的填充控制元素与其边框之间的空间量。
-```
-.green-box {
-  background-color: green;
-  padding: 20px;
-}
-```
+
 ### 调整元素的边距
-元素margin控制元素border与周围元素之间的空间量。
-```
-.green-box {
-  background-color: green;
-  padding: 20px;
-  margin: 20px;
-}
-```
+
 
 ### 向元素添加负边距
 元素margin控制元素边界和周围元素之间的空间量。如果将元素的边距设置为负值，则元素将变大。
