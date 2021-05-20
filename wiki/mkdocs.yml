@@ -6,6 +6,7 @@ hljs_languages:
 nav:
     - Home: index.md
     - About: about.md
-    - HTML-&-CSS: HTML-&-CSS.md
+    - HTML5基础: 001-basic-html-and-html5.md
+    - CSS基础: 002-basic-css.md
 
 theme: readthedocs
