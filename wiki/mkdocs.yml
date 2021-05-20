@@ -6,7 +6,15 @@ hljs_languages:
 nav:
     - Home: index.md
     - About: about.md
-    - HTML5基础: 001-basic-html-and-html5.md
-    - CSS基础: 002-basic-css.md
+    - 1、HTML5基础: 001-basic-html-and-html5.md
+    - 2、CSS基础: 002-basic-css.md
+    - 3、应用视觉设计: 003-applied-visual-design.md
+    - 4、应用无障碍: 004-applied-accessibility.md
+    - 5、响应式 Web 设计原则: 005-responsive-web-design-principles.md
+    - 6、CSS 弹性盒子: 006-css-flexbox.md
+    - 7、CSS 网格: 007-css-grid.md
+    - 8、项目实战: 008-responsive-web-design-projects.md
+
+
 
 theme: readthedocs

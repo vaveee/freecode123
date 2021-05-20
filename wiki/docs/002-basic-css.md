@@ -16,7 +16,8 @@ CSS允许我们更改许多样式。要更改元素的颜色，请使用color。
 
 在该样式元素内，你可以为任何HTML元素创建CSS选择器。例如，如果你希望所有h2元素均为红色，则样式元素应如下所示:`<style>h2 {color: red;}</style>`。
 
-**请注意，**
+请注意:
+
   1. 在每个元素的样式周围同时具有大括号({和大括号是很重要})的。
   2. 你还需要确保元素的样式在开始和结束样式标签之间。
   3. 最后，请确保在每个元素样式的末尾添加分号。
@@ -27,9 +28,10 @@ h2 {
    color : blue;
 }
 </style>
-```
+
 <h2> 小猫相册App </h2>
 <p>小猫的那一双大耳朵，一天到晚都直竖着，哪个地方有声音，马上往那边转，活像一架有特殊性能的雷达。</p>
+```
 
 ### 使用 class 选择器设置单个元素的样式
 class【class：类】是可重用的样式，可以添加到HTML元素中。
@@ -270,7 +272,7 @@ id属性在页面内应该是唯一的。浏览器不会强制执行此操作，
 
 请注意，在样式元素内部，你总是通过在类.名之前引用类来引用它们。你总是通过在ID#前面加上ID来引用ID 。
 ### 调整元素的内边距
-HTML元素本质上是小矩形。三个重要的属性控制围绕每个HTML元素的空间:padding，margin，和border。元素的内边距padding控制元素与其边框之间的空间量。
+HTML元素本质上是小矩形。三个重要的属性控制围绕每个HTML元素的空间:padding，margin，和border。元素的内边距padding控制元素与其边框之间的距离。
 ```
 .green-box {
   background-color: green;
@@ -278,7 +280,7 @@ HTML元素本质上是小矩形。三个重要的属性控制围绕每个HTML元
 }
 ```
 ### 调整元素的外边距
-元素外边距margin控制元素border与周围元素之间的空间量。
+元素外边距margin控制元素border与周围元素之间的距离。
 ```
 .green-box {
   background-color: green;
@@ -287,57 +289,10 @@ HTML元素本质上是小矩形。三个重要的属性控制围绕每个HTML元
 }
 ```
 ### 给元素添加负外边距
+元素margin控制元素边界和周围元素之间的距离。如果将元素的边距设置为负值，则会边框会朝相反的方向移动。
+
 ### 给元素的每一侧添加不同的内边距
-### 给元素的每一侧添加不同的外边距
-### 使用顺时针标记指定元素的内边距
-### 使用顺时针标记指定元素的外边距
-### 使用属性选择器来设置元素的样式
-### 理解绝对单位与相对单位
-### 给 HTML 的 body 元素添加样式
-### 从 body 元素继承样式
-### 样式中的优先级
-### Class 选择器的优先级高于继承样式
-### ID 选择器优先级高于 Class 选择器
-### 内联样式的优先级高于 ID 选择器
-### Important 的优先级最高
-### 使用十六进制编码获得指定颜色
-### 使用十六进制编码混合颜色
-### 使用缩写的十六进制编码
-### 使用 RGB 值为元素上色
-### 使用 RGB 混合颜色
-### 使用 CSS 变量一次更改多个元素
-### 创建一个自定义的 CSS 变量
-### 使用一个自定义的 CSS 变量
-### 给 CSS 变量设置备用值
-### 浏览器降级提高兼容性
-### 继承 CSS 变量
-### 更改特定区域的变量
-### 使用媒体查询更改变量-不同的屏幕大小适用不同的样式
-
-
-
-
-
-
-### 将替代文本添加到图像以实现辅助功能
-alt属性（也称为替代文本）是浏览器如果无法加载图像将显示的内容。alt属性对于盲人或视障用户了解图像所描绘的内容也很重要。搜索引擎还会查看alt属性。
-
-简而言之，每个图像都应具有alt属性！
-
-你可以在这样img元素添加alt属性的权利:`<img src="www.your-image-source.com/your-image.jpg" alt="your alt text"/>`。
-
-
-
-### 调整元素的填充
-
-### 调整元素的边距
-
-
-### 向元素添加负边距
-元素margin控制元素边界和周围元素之间的空间量。如果将元素的边距设置为负值，则元素将变大。
-
-### 向元素的每一侧添加不同的填充
-CSS允许你控制元素的填充四面有padding-top，padding-right，padding-bottom，和padding-left属性。
+CSS允许你控制元素的上、右、下、左内边距，分别使用padding-top，padding-right，padding-bottom，和padding-left属性。
 ```
 .green-box {
   background-color: green;
@@ -348,36 +303,52 @@ CSS允许你控制元素的填充四面有padding-top，padding-right，padding-
 }
 ```
 
-### 向元素的每一边添加不同的边距
-CSS允许你控制元素的保证金四面有margin-top，margin-right，margin-bottom，和margin-left属性。
+### 给元素的每一侧添加不同的外边距
+CSS允许你控制元素的上、右、下、左外边距，分别使用margin-top，margin-right，margin-bottom，和margin-left属性。
 
-### 使用顺时针表示法指定元素的填充
-除了指定一个元素的padding-top，padding-right，padding-bottom，和padding-lef牛逼的属性，你可以在一行中指定他们，就像这样:padding: 10px 20px 10px 20px;。
 
-这四个值像一个时钟一样工作:top, right, bottom, left【top：上，right：右，bottom：下，左：left】并且将产生与使用侧面特定的填充指令完全相同的结果。
+### 使用顺时针标记指定元素的内边距
+除了指定一个元素的padding-top，padding-right，padding-bottom，和padding-lef内边距的属性，你可以在一行中指定他们，就像这样:padding: 10px 20px 10px 20px;。
+
+这四个值像一个时钟一样工作:top, right, bottom, left【top：上，right：右，bottom：下，左：left】一行指定和分别制定效果完全相同。
 ```
 .green-box {
   background-color: green;
   padding: 40px 20px 20px 40px
 }
 ```
-
-### 使用顺时针表示法指定元素的边距
-除了指定一个元素的margin-top，margin-right，margin-bottom，和margin-left属性，你可以在一行中指定他们，就像这样:margin: 10px 20px 10px 20px;。
-
-这四个值像一个时钟一样工作:top, right, bottom, left【top：上，right：右，bottom：下，左：left】并且将产生与使用特定于边距的边距指令完全相同的结果。
-
+### 使用顺时针标记指定元素的外边距
+参照内边距，外边距使用margin
 .green-box {
   background-color: green;
   margin: 40px 20px 20px 40px;
 }
 
-### 设置HTML正文元素的样式
-每个HTML页面都有该body元素。就像主页一样。
+### 使用属性选择器来设置元素的样式
+下面的代码会改变所有type为radio的元素的外边距。
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
 
-### 从Body元素继承样式
-该body元素可以是风格，就像任何其他。
+### 理解绝对单位与相对单位
+CSS 有不同的长度单位供我们使用。
 
+相对单位，如em的大小基于元素的字体的font-size值。
+
+相对单位，如in和mm分别代表着英寸和毫米。
+
+### 给 HTML 的 body 元素添加样式
+我们可以通过设置background-color为black，来证明body元素的存在。
+
+添加以下的代码到style标签里面：
+```
+body {
+  background-color: black;
+}
+```
+### 从 body 元素继承样式
+h1标签默认会继承body的样式。
+```
 <style>
   body {
     background-color: black;
@@ -387,9 +358,9 @@ CSS允许你控制元素的保证金四面有margin-top，margin-right，margin-
 
 </style>
 <h1>你好，世界</h1>
-
-###　将一种样式优先于另一种样式
-单个元素的类优先于一般样式。
+```
+### 样式中的优先级
+单个元素的class样式优先级高于继承的样式。
 
 ```
 <style>
@@ -404,12 +375,11 @@ CSS允许你控制元素的保证金四面有margin-top，margin-right，margin-
 ```
 
 这使得粉红色的h1代替了绿色的h1。
+### Class 选择器的优先级高于继承样式
+你的class将覆盖body的CSS，如果我们添加一个更改相同属性的新class，则最后一个将被应用。
 
-###　在后续CSS中覆盖样式
-你的类将覆盖主体的CSS，如果我们添加一个更改相同属性的新类，则最后一个将被应用。
-
-###　通过设置ID属性的样式来覆盖类声明
-我们也可以使用id覆盖样式。
+### ID 选择器优先级高于 Class 选择器
+我们也可以使用id覆盖class样式。
 ```
 <style>
   body {
@@ -427,47 +397,31 @@ CSS允许你控制元素的保证金四面有margin-top，margin-right，margin-
 </style>
 <h1 class="pink-text blue-text" id="orange-text">你好，世界!</h1>
 ```
-
-### 用内联样式覆盖类声明
-请记住，线条样式如下所示:`<h1 style="color: green">`它们将覆盖更改h1文本颜色的其他所有内容。
-
-### 使用“!important”替代所有其他样式
+### 内联样式的优先级高于 ID 选择器
+请记住，内联样式如下所示:`<h1 style="color: green">`它们将覆盖更改h1文本颜色的其他所有样式，包括id选择器样式和class选择器样式。
+### Important 的优先级最高
 在许多情况下，你将使用CSS库。这些可能会意外覆盖你自己的CSS。因此，当你绝对需要确保某个元素具有特定的CSS时，可以使用`!important`。
 
-如何做到这一点的一个例子是:`color: red !important`;这将确保我们使用想要的属性，而不考虑其他替代。
-
-### 对特定颜色使用十六进制代码
+如下所示::`color: red !important`;这将确保我们使用想要的属性，而不考虑其他。
+### 使用十六进制编码获得指定颜色
 对于CSS，我们使用6个十六进制数字表示颜色。例如，`#000000`是可能的最低值，它代表黑色。
 
-这与#RRGGBB也可以简化为的相同#RGB。
+`#RRGGBB也可以简化为#RGB`。
 
-### 使用十六进制代码将元素着色为白色
+### 使用十六进制编码混合颜色
+白色`#FFFFFF`
 0是十六进制代码中最低的数字，表示完全没有颜色。F是十六进制代码中的最高数字，它表示最大可能的亮度。
 
-### 使用十六进制代码将元素着色为红色
+红色`#FF0000`
 十六进制代码遵循红绿蓝或rgb格式。十六进制代码的前两位数字代表颜色中红色的数量。第三和第四位数字代表绿色。第五和第六代表蓝色的数量。
 
 因此，要获得绝对最亮的红色，你将只使用F第一和第二位数字（可能的最大值）以及0第三，第四，第五和第六位数字（可能的最小值）。
+绿色`#00FF00`
+蓝色`#0000FF`
 
-### 使用十六进制代码为元素添加绿色
-就像红色和其他的一样。
-```
-<style>
-  body {
-    background-color: #00FF00;
-  }
-</style>
-```
-### 使用十六进制代码为蓝色元素着色
-就像红色和其他的一样。
-```
-<style>
-  body {
-    background-color: #0000FF;
-  }
-</style>
-```
-### 使用十六进制代码混合颜色
+我们还可以通过将所有三种颜色均匀混合来创建不同的灰色阴影。 `background-color: #808080`;
+我们还可以通过将所有三种颜色均匀混合来创建其他灰色阴影。我们可以非常接近真正的黑色。`background-color: #111111`;
+
 橙色是纯红色，混合有一些绿色，没有蓝色。
 ```
 <style>
@@ -476,13 +430,7 @@ CSS允许你控制元素的保证金四面有margin-top，margin-right，margin-
   }
 </style>
 ```
-### 使用十六进制代码将元素着色为灰色
-我们还可以通过将所有三种颜色均匀混合来创建不同的灰色阴影。 `background-color: #808080`;
-
-### 对特定的灰色阴影使用十六进制代码
-我们还可以通过将所有三种颜色均匀混合来创建其他灰色阴影。我们可以非常接近真正的黑色。`background-color: #111111`;
-
-### 使用缩写的十六进制代码
+### 使用缩写的十六进制编码
 
 `#FF0000`十六进制代码中的红色可以缩短为#F00。也就是说，红色代表一位，绿色代表一位，蓝色代表一位。
 
@@ -494,27 +442,92 @@ CSS允许你控制元素的保证金四面有margin-top，margin-right，margin-
   }
 </style>
 ```
-### 使用RGB值作为色彩元素
+### 使用 RGB 值为元素上色
 在CSS中表示颜色的另一种方法是使用rgb值。
 
 RGB值如下所示:rgb(0, 0, 0)黑色和rgb(255, 255, 255)白色。
 
-与其像使用十六进制代码那样使用六个十六进制数字，不如使用rbg，你可以使用0到255之间的数字指定每种颜色的亮度。 background-color: rgb(0,0,0);
+你可以使用0到255之间的数字指定每种颜色的亮度。 background-color: rgb(0,0,0);
 
-### 使用RGB将元素着色为白色
-background-color: rgb(255,255,255)
+rgb值白色: rgb(255,255,255)
 
-### 使用RGB将红色元素着色
-background-color: rgb(255, 0, 0)
+rgb值红色: rgb(255, 0, 0)
 
-### 使用RGB为绿色着色元素
 rgb值绿色: rgb(0, 255, 0)
 
-### 使用RGB为蓝色元素着色
-RGB值蓝色: rgb(0, 0, 255)
+rgb值蓝色: rgb(0, 0, 255)
 
-### 使用RGB混合颜色
-RGB值橙色: rgb(255, 165, 0)
+### 使用 RGB 混合颜色
+就像使用十六进制编码一样，你可以通过不同值的组合，来混合得到不同的 RGB 颜色。
 
-### 使用RGB将元素着色为灰色
-灰色的RGB值: rgb(128, 128, 128)
+rgb值橙色: rgb(255, 165, 0)
+
+rgb值灰色: rgb(128, 128, 128)
+
+rgb值兰花: rgb(218, 112, 214)
+
+rgb值赭色: 	rgb(160, 82, 45)
+
+### 使用 CSS 变量一次更改多个元素
+使用CSS 变量，可以通过改变更改一个值，一次性更改多个 CSS 样式属性。
+定义变量：
+
+```
+--penguin-skin: black;
+--penguin-belly: gray;
+--penguin-beak: yellow;
+```
+
+### 创建一个自定义的 CSS 变量
+创建一个 CSS 变量，你只需要在变量名前添加两个破折号，并为其赋值，例子如下：
+
+`--penguin-skin: gray;`
+### 使用一个自定义的 CSS 变量
+创建变量后，CSS 属性可以通过引用变量名来使用它的值。
+
+`background: var(--penguin-skin);`
+### 给 CSS 变量设置备用值
+正在使用着不支持 CSS 变量的旧浏览器，或者设备不支持你设置的变量值。为了防止这种情况出现，那么你可以这样写：
+
+background: var(--penguin-skin, black);
+这样，当你的变量有问题的时候，它会设置你的背景颜色为黑色。
+### 浏览器降级提高兼容性
+使用 CSS 时可能会遇到浏览器兼容性问题。 提供浏览器降级方案来避免潜在的问题会显得很重要。
+### 继承 CSS 变量
+你创建的变量，不但可以在你声明变量的元素里面使用，同时也可以在该元素的子元素里面使用。这种效应称为cascading（层叠）。
+
+因为层叠的效果，CSS 变量通常会定义在:root元素里。
+
+就像html是body的容器一样，你也可以认为:root元素是你整个 HTML 文档的容器。
+
+在:root创建的变量，在整个网页里面都能生效。
+```
+ :root {
+    --penguin-skin: black;
+  }
+```
+
+### 更改特定区域的变量
+当你在:root里创建变量时，这些变量的作用域是整个页面。
+
+如果在元素里创建相同的变量，会重写:root变量设置的值。
+### 使用媒体查询更改变量-不同的屏幕大小适用不同的样式
+CSS 变量可以简化媒体查询的方式。
+例如，当屏幕小于或大于媒体查询所设置的值，通过改变变量的值，那么应用了变量的元素样式都会得到响应修改。
+
+在media query（媒体查询）声明的:root选择器里，重定义–penguin-size的值为 200px，且重定义–penguin-skin的值为black，然后通过缩放页面来查看是否生效。
+```
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+ 
+  @media (max-width: 350px) {
+    :root {
+      --penguin-size: 200px;
+      --penguin-skin: black;
+    }
+  }
+```
