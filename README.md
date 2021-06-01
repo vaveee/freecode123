@@ -3,7 +3,7 @@
 
 ### 从0开始前端开发
 
- 1. [html基础](./wiki/docs/001-basic-html-and-html5)
+ 1. [html基础](./wiki/docs/001-basic-html-and-html5.md)
  1. [css基础](./wiki/docs/002-basic-css)
  1. [应用视觉设计](./wiki/docs/003-applied-visual-design)
  1. [应用无障碍](./wiki/docs/004-applied-accessibility)
