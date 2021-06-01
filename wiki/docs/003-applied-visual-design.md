@@ -260,15 +260,143 @@ repeating-linear-gradient()函数和linear-gradient()很像，主要区别是rep
 
 
 ### 添加细微图案作为背景图像来创建纹理
-添加一个精致的背景图，可以增加页面的质感，让页面更美观。关键是要找到一个平衡点，抢了内容的风头，喧宾夺主可就不妙了。background属性支持使用url()函数通过链接的方式引入一个指定纹理或样式的图片。图片链接地址在括号内，一般会用引号包起来。
+添加一个精致的背景图，可以增加页面的质感，让页面更美观。需要找到一个平衡点，不能抢了内容的风头，喧宾夺主可就不妙了。使用background属性，使用url()函数包含链接的方式引入一个指定纹理或样式的图片。图片链接地址在括号内，一般会用引号包起来。
 
 ### 使用 CSS Transform scale 属性可以更改元素的大小
+CSS 属性transform里面的scale()函数，可以用来改变元素的显示比例。下面的例子把页面的段落元素放大了 2 倍：
+```
+p {
+ transform:scale(2);
+}
+```
 ### 使用CSS Transform scale 属性在悬停时缩放元素
+transform属性有很多函数，可以对元素进行
+调整大小scale(x,y)或scaleX(x)或scaleY(y)、
+移动translate(x,y) 或者translateX(x)或者translateY(y)、
+倾斜skew(x-angle,y-angle)或者skewX(angle)或者skewY(angle)、
+旋转rotate(angle)或rotateX(angle)或rotateY(angle)
+等操作。当使用伪类描述元素的指定状态如:hover时，transform属性可以方便的给元素添加交互。
+
+下面是当用户悬停段落元素时，段落大小缩放到原始大小 2.1 倍的例子：
+```
+p:hover {
+  transform: scale(2.1);
+}
+```
+参考：https://www.cnblogs.com/EricZLin/p/8872280.html
 ### 使用 CSS Transform skex 属性沿X轴倾斜元素
+接下来要介绍的transform属性是skewX，skewX使选择的元素沿着 X 轴（横向）翻转指定的角度。
+
+下面的代码沿着 X 轴翻转段落元素 -32 度。
+```
+p {
+  transform: skewX(-32deg);
+}
+```
 ### 使用 CSS Transform skex 属性沿Y轴倾斜元素
-### 使用 CSS 创建一个图形
-### 使用 CSS 和 HTML 创建更复杂的形状
+skewX函数使指定元素沿 X 轴偏斜指定的角度，想必你已经猜到了，skewY属性使指定元素沿 Y 轴（垂直方向）偏斜指定角度。
+
+### 使用 CSS 创建一个图形（新月）
+术语表：
+blur-radius ⇒ 模糊半径，
+spread-radius ⇒ 辐射半径，
+transparent ⇒ 透明的，
+border-radius ⇒ 圆角边框。
+
+通过使用选择器选择不同的元素并改变其属性，你可以创造一些有趣的形状。
+比如新月。你可以使用box-shadow属性来设置元素的阴影，border-radius属性控制元素的圆角边框。
+
+首先你将会创建一个圆的、透明的对象，它具有模糊阴影并略微向两边递减。如你所见，这个阴影其实就是新月形狀。
+
+为了创建一个圆形的对象，border-radius应该被设置成 50%。
+
+你应该还记得之前关卡的box-shadow属性以及它的依次取值offset-x、offset-y、blur-radius、spread-radius和颜色值。其中blur-radius和spread-radius是可选的。
+
+把编辑器里的正方形元素变成新月形状。
+
+首先，把background-color改为 transparent，
+接着把border-radius属性设置成 50%，以创建一个圆形。
+最后，更改box-shadow属性，使其offset-x为 25px，offset-y为 10px，blur-radius为 0，spread-radius为 0，color为 blue。
+```
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0 0 blue;
+  }
+
+</style>
+<div class="center"></div>
+```
+### 使用 CSS 和 HTML 创建更复杂的形状（心形）
+世界上最流行的形状非心形莫属了，在本关里你将用纯 CSS 创建一个心形。
+但是首先你需要了解:before和:after伪类。这些伪类用来在选择元素之前和之后添加一些内容。
+在下面的例子里，:before伪类元素用来给 class 为heart的元素添加一个正方形。
+
+.heart:before {
+  content: "";
+  background-color: yellow;
+  border-radius: 25%;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  top: -50px;
+  left: 5px;
+}
+ 
+:before和:after必须配合content来使用。这个属性通常用来给元素添加内容诸如图片或者文字。
+当:before和:after伪类用来添加某些形状而不是图片或文字时，content属性仍然是必需的，但是它的值可以是空字符串。
+
+在上面的例子里，class 为heart元素的:before伪类添加了一个黄色的长方形，长方形的height和width分别为 50px 和 70px。由于设置了其边框半径为 25%，所以长方形为圆角长方形，同时其相对位置为距离left5px，以及向top偏移 50px。
+
+```
+<style>
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+  }
+  .heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content:  "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+</style>
+<div class="heart"></div>
+```
+
 ### 了解 CSS 的关键帧和动画是如何工作的
+
 ### 使用CSS动画更改按钮的悬停状态
 ### 修改动画的填充模式
 ### 使用 CSS 动画创建动画
