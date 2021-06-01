@@ -368,7 +368,7 @@ border-radius ⇒ 圆角边框。
 世界上最流行的形状非心形莫属了，在本关里你将用纯 CSS 创建一个心形。
 但是首先你需要了解:before和:after伪类。这些伪类用来在选择元素之前和之后添加一些内容。
 在下面的例子里，:before伪类元素用来给 class 为heart的元素添加一个正方形。
-
+```
 .heart:before {
   content: "";
   background-color: yellow;
@@ -379,7 +379,7 @@ border-radius ⇒ 圆角边框。
   top: -50px;
   left: 5px;
 }
- 
+ ```
 :before和:after必须配合content来使用。这个属性通常用来给元素添加内容诸如图片或者文字。
 当:before和:after伪类用来添加某些形状而不是图片或文字时，content属性仍然是必需的，但是它的值可以是空字符串。
 
