@@ -178,7 +178,35 @@ fixed定位和absolute定位的最明显的区别是fixed定位元素不会随�
 浮动元素不在文档流中，它向左或向右浮动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。通常需要用width属性来指定浮动元素占据的水平空间。
 
 ### 使用 z-index 属性更改重叠元素的位置
-当一些元素重叠时，在 HTML 里后出现的元素会默认显示在更早出现的元素的上面。你可以使用z-index属性指定元素的堆叠次序。z-index的取值是整数，数值大的元素优先于数值小的元素显示。
+当一些元素重叠时，后出现的元素默认显示在更早出现的元素的上面。你可以使用z-index属性指定元素的堆叠次序。z-index的取值是整数，数值大的元素优先于数值小的元素显示。
+
+给 class 为first的元素（红色的方块）添加z-index属性并赋值为 2，使它显示在蓝色方块的上方。
+
+ ```
+<style>
+  div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+ 
+  .first {
+    background-color: red;
+    position: absolute;
+ 
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+  }
+</style>
+ 
+<div class="first"></div>
+<div class="second"></div>
+```
 
 ### 使用 margin 属性将元素水平居中
 在应用设计中经常需要把一个块级元素水平居中显示。一种常见的实现方式是把块级元素的margin值设置为auto。
