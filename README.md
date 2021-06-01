@@ -1,4 +1,4 @@
-### freecodecamp.org中文学习笔记
+### freecodecamp 网站学习笔记
 
 
 ### 从0开始前端开发
