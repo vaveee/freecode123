@@ -1,6 +1,9 @@
-### freecodecamp 网站学习笔记
+## 辣味儿的学习笔记
 
 
+
+
+## freecodecamp 网站学习笔记
 ### 从0开始前端开发
 
  1. [html基础](./wiki/docs/001-basic-html-and-html5.md)
@@ -12,3 +15,7 @@
  1. [CSS 网格](./wiki/docs/007-css-grid.md)
  1. [项目实战](./wiki/docs/008-responsive-web-design-projects.md)
 
+
+### 其他资源
+ 1. [修改Hosts临时解决无法链接的问题](https://www.ioiox.com/archives/62.html)
+ 
