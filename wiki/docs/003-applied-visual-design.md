@@ -156,7 +156,7 @@ p {
 ### 使用 CSS 偏移移动相对定位的元素
 CSS 里面的top、bottom、left和right定义了元素在相应方位的偏移距离。元素将从当前位置，向属性相反的方向偏移。就像你在上一个挑战看到的，top属性使h2向下移动。left属性使元素向右移动。
 
-![alt 属性文本](image/eWWi3gZ.gif)
+![alt 属性文本](./image/eWWi3gZ.gif)
 
 ### 绝对定位的参照物是元素的父元素
 position属性的取值选项absolute，absolute相对于其包含块(父元素)定位。
