@@ -577,10 +577,10 @@ HTML 提供accesskey属性，用于指定激活标签或者使标签获得焦点
 HTML5 允许在任何标签上使用这个属性。该属性对于交互类标签（如链接、按钮、表单控件等）十分有用。
 
 带有指定快捷键的超链接：
-
+```
 <a href="#" accesskey="h">HTML</a><br />
 <a href="#" accesskey="c">CSS</a>
-
+```
 注释：请使用Alt + accessKey (或者 Shift + Alt + accessKey) 来访问带有指定快捷键的元素。
 
 ### 使用 tabindex 将键盘焦点添加到元素中
