@@ -4,7 +4,7 @@
 
 
 ## freecodecamp 网站学习笔记
-### 从0开始前端开发
+### web前端开发从入门到精通
 
  1. [html基础](./wiki/docs/001-basic-html-and-html5.md)
  1. [css基础](./wiki/docs/002-basic-css.md)
